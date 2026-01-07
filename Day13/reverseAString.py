@@ -1,4 +1,10 @@
 def reverse(str):
-    pass
+    revStr=""
+    stack=[]
+    for i in str:
+        stack.append(i)
+    while len(stack) != 0:
+        revStr+=stack.pop()
+    return revStr
 str=input("Enter the String:")
-print("Reversed String is",reverse(str))
+print("Reversed String is are :",reverse(str))
