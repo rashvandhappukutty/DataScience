@@ -15,18 +15,16 @@ class Stack:
         return self.stack.pop()
     
     def top(self):
-        if not self.stack:
-            return "Stack is empty"
         return self.stack[-1]
     
-    def is_empty(self):
-        return len(self.stack) == 0
-    
-    def __str__(self):
-        return str(self.stack)
+    def peek(self):
+        if not self.stack:
+            return "Stack is Underflow"
+        else:
+            return self.stack[-1]
 
 stackObj = Stack(5)
-elements = [5, 10, 15, 20, 25, 30, 35]
+elements = [5, 10, 15, 20, 25, 30]
 
 for elem in elements:
     stackObj.push(elem)
