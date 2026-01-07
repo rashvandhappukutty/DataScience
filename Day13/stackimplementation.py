@@ -1,0 +1,11 @@
+stack = []
+stack.append(10)
+stack.append(20)
+stack.append(30)
+print(stack.pop())
+stack.append(40)
+stack.append(50)
+stack.append(60)
+print("Top element is:", stack[-1])
+print("Peek element:", stack[-1])
+print(stack)
